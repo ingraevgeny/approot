@@ -10,8 +10,6 @@
     </parent>
     <artifactId>helm-approot</artifactId>
     <properties>
-        <username>${username}</username>
-        <password>${password}</password>
         <helmDownloadUrl>https://get.helm.sh/helm-v3.8.1-linux-amd64.tar.gz</helmDownloadUrl>
         <helmChartVersion>201-dev</helmChartVersion>
         <imageVer>${imageVer}</imageVer>
@@ -32,7 +30,7 @@
                         <image>
                             <alias>approot</alias>
                             <name>approot:1.0.1</name>
-                            <registry>docker.io/dock999evg</registry>
+                            <registry>${registry}</registry>
                             <build>
                                 <dockerFile>${project.basedir}/Dockerfile</dockerFile>
                                 <tags>
@@ -103,7 +101,7 @@
                             <arguments>
                                 <argument>push</argument>
                                 <argument>${project.build.directory}/helm/${project.parent.artifactId}-${helmChartVersion}.tgz</argument>
-                                <argument>oci://registry-1.docker.io/dock999evg</argument>
+                                <argument>${oci-url}</argument>
                             </arguments>
                         </configuration>
                     </execution>
