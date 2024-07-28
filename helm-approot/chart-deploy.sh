@@ -6,6 +6,7 @@ svc["drones"]=8083
 svc["clients"]=8081
 svc["approot"]=8085
 svc["delivery"]=8087
+svc["orders"]=8089
 
 for key in "${!svc[@]}"
 do
