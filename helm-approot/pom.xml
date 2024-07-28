@@ -103,7 +103,7 @@
                             <arguments>
                                 <argument>push</argument>
                                 <argument>${project.build.directory}/helm/${project.parent.artifactId}-${helmChartVersion}.tgz</argument>
-                                <argument>oci://registry-1.docker.io/dock999evg</argument>
+                                <argument>${oci-url}</argument>
                             </arguments>
                         </configuration>
                     </execution>
