@@ -10,8 +10,8 @@
     </parent>
     <artifactId>helm-approot</artifactId>
     <properties>
-        <username>dock999evg</username>
-        <password>Aa123456</password>
+        <username>${username}</username>
+        <password>${password}</password>
         <helmDownloadUrl>https://get.helm.sh/helm-v3.8.1-linux-amd64.tar.gz</helmDownloadUrl>
         <helmChartVersion>201-dev</helmChartVersion>
         <imageVer>${imageVer}</imageVer>
