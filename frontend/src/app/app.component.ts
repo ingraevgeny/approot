@@ -19,8 +19,10 @@ export class AppComponent {
 
   menuItems = [
     {title: 'Clients', url: 'http://localhost:8081'},
+    {title: 'Orders', url: 'http://localhost:8089'},
     {title: 'Drones', url: 'http://localhost:8083'},
     {title: 'Delivering', url: 'http://localhost:8087'}
+
   ];
 
   public openMicroFront(url: string): void {
