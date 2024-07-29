@@ -51,7 +51,7 @@ Run command:
 
 after the command is done, you have to see like this:
 
-ubu>kubectl get pod
+ubu>kubectl get pod  
 NAME       READY   STATUS    RESTARTS   AGE  
 approot    1/1     Running   0          4h12m  
 clients    1/1     Running   0          4h12m  
