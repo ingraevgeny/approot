@@ -14,12 +14,12 @@ The Application includes the microservices: clients, orders, drones, delivering
 ### Requirements
 ___
 
-JDK 17, Maven 3+
-Docker
-Minikube
-Kubectl
-Helm
-Linux is better than Windows
+JDK 17, Maven 3+  
+Docker  
+Minikube  
+Kubectl  
+Helm  
+Linux is better than Windows  
 
 ### How To Build
 
@@ -29,13 +29,13 @@ where you have to set a credentials to get access to your repository
 to deploy docker images and helm charts: username, password, registry, oci-url 
 
 Clone each microservice repository,
-for each one open the console, go to the root application project folder and enter the commands sequentially:
+for each one open the console, go to the root application project folder and enter the commands sequentially:  
 
-_mvn install_-DimageVer=<imageVer> -DskipTests=true
+_mvn install_-DimageVer=<imageVer> -DskipTests=true  
 
-where <imageVer> matches the version of the image in file helm-<artifactId>/src/main/resources/<artifactId>/values.yaml  
-image:
-    tag: <imageVer>
+where <imageVer> matches the version of the image in file helm-<artifactId>/src/main/resources/<artifactId>/values.yaml    
+image:  
+    tag: <imageVer>  
 
 ### How To Use
 
@@ -52,12 +52,12 @@ Run command:
 after the command is done, you have to see like this:
 
 ubu>kubectl get pod
-NAME       READY   STATUS    RESTARTS   AGE
-approot    1/1     Running   0          4h12m
-clients    1/1     Running   0          4h12m
-delivery   1/1     Running   0          4h12m
-drones     1/1     Running   0          4h12m
-orders     1/1     Running   0          4h12m
+NAME       READY   STATUS    RESTARTS   AGE  
+approot    1/1     Running   0          4h12m  
+clients    1/1     Running   0          4h12m  
+delivery   1/1     Running   0          4h12m  
+drones     1/1     Running   0          4h12m  
+orders     1/1     Running   0          4h12m  
 
 
 ### Explore application
