@@ -29,7 +29,7 @@ where you have to set a credentials to get access to your repository
 to deploy docker images and helm charts: username, password, registry, oci-url 
 
 Clone each microservice repository,
-for each one open the console, go to the root application project folder and enter the commands sequentially:  
+for each one open the console, go to the root application project folder and enter the command:  
 
 _mvn install_-DimageVer=$imageVer -DskipTests=true  
 
