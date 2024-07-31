@@ -84,7 +84,7 @@
         </plugins>
       <resources>
         <resource>
-          <!-- we copy the content of the frontend directory in the final artifact -->
+          <!-- we copy the content of the frontend directory to the final artifact -->
           <directory>dist/frontend/browser</directory>
         </resource>
       </resources>
