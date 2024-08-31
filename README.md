@@ -31,7 +31,7 @@ to deploy docker images and helm charts: username, password, registry, oci-url
 Clone each microservice repository,
 for each one open the console, go to the root application project folder and enter the command:  
 
-_mvn install_-DimageVer=$imageVer -DskipTests=true  
+_mvn install -DimageVer=$imageVer -DskipTests=true  
 
 where $imageVer matches the version of the image in the file: helm-$artifactId/src/main/resources/$artifactId/values.yaml    
 image:  
