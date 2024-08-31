@@ -8,7 +8,7 @@
 
 ### Description
 
-This project shows the root page of Microservice Architecture Application example.
+This project shows the root page of Microservices Architecture Application example.
 The Application includes the microservices: clients, orders, drones, delivering
 
 ### Requirements
